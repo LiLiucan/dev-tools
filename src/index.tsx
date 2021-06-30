@@ -8,6 +8,7 @@ import * as Sentry from '@sentry/browser';
 import App from './app';
 
 import '@/common/styles/index.scss';
+import 'antd/dist/antd.css';
 
 const { REACT_APP_ENV } = process.env;
 
