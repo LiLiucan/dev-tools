@@ -1,0 +1,70 @@
+@import '~@/common/styles/index.scss';
+
+.logo {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  width: 30vw;
+}
+
+.login-page {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.label {
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+  margin-left: 0;
+}
+
+.input {
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 6px 10px;
+  width: 400px;
+  font-size: 16px;
+  transition: all 0.2s;
+  border: 2px solid #ccc;
+
+  &:focus {
+    border: 2px solid #66afe9;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.submit-btn {
+  margin-top: 30px;
+  font-size: 20px;
+  background-color: skyblue;
+  border: 2px solid transparent;
+  // box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+  width: 180px;
+  height: 48px;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: #66afe9;
+  }
+
+  &__disabled {
+    background-color: #ccc;
+    &:hover {
+      border-color: #aaa;
+    }
+  }
+
+  &__loading {
+    background-color: #aaa;
+    &:hover {
+      border-color: #aaa;
+    }
+  }
+}
